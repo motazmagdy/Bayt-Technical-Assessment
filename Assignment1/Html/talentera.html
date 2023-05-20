@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talentera</title>
+    <link rel="stylesheet" href="../Styles/talentera.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="header">
+      <div class="headerContent">
+        <div class="logoPart">
+          <i class="fa-solid fa-house-chimney" style="color: #ffffff;"></i>
+          <a href="#" class="logo">Logo</a>
+        </div>
+        <div class="headerItems" id="headerItems">
+          <a href="#">Team</a>
+          <a href="#">Work</a>
+          <a href="#">Price</a>
+          <a href="#">Contact</a>
+          <label for="dropdown"></label>
+          <select name="dropdown" id="dropdown">
+            <option value="dropdown">Dropdown</option>
+            <option value="dropdown1">Dropdown#1</option>
+            <option value="dropdown2">Dropdown#2</option>
+            <option value="dropdown3">Dropdown#3</option>
+          </select>
+        </div>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff; margin: 1rem; cursor: pointer;"></i>
+      </div>
+            <a href="#" class="toggle" onclick="toggleItems()">
+                <i class="fa-solid fa-bars fa-sm" style="color: #ffffff;"></i>
+            </a>
+    </div>
+    <!-- Header End -->
+
+    <!-- Carousel Start -->
+    <div class="carousel">
+      <img class="carouselI" src="../Assets/Images/photo.jpg" />
+      <p class="carouselP">Talentra</p>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Our Team Start -->
+    <div class="team">
+      <h3>OUR TEAM</h3>
+      <p class="profileTexts">Meet the team - our office rats :</p>
+      <div class="teamInfo">
+        <div class="">
+          <img src="../Assets/Profiles/pr1.png" class="profileImg" />
+          <h4>Islam AlZatary</h4>
+          <p class="profileTexts">Web Designer</p>
+        </div>
+        <div class="">
+          <img src="../Assets/Profiles/pr2.png" class="profileImg" />
+          <h4>Tayseer Emam</h4>
+          <p class="profileTexts">Support</p>
+        </div>
+        <div class="">
+          <img src="../Assets/Profiles/pr3.png" class="profileImg" />
+          <h4>Eman Subhi</h4>
+          <p class="profileTexts">Boss man</p>
+        </div>
+        <div class="">
+          <img src="../Assets/Profiles/pr4.png" class="profileImg" />
+          <h4>Reem Yakoub</h4>
+          <p class="profileTexts">Fixer</p>
+        </div>
+      </div>
+    </div>
+    <!-- Our Team End -->
+
+    <!-- Our Work Start -->
+    <div class="work">
+       <div class="workContainer">
+        <div class="workInfo">
+            <h3>Our work</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolorum quae
+                 commodi voluptates reprehenderit incidunt suscipit repellat, deleniti
+                  consequuntur recusandae culpa inventore aliquam corporis veritatis a 
+                  cupiditate nostrum quaerat architecto ,  deleniti
+                  consequuntur recusandae culpa inventore aliquam corporis veritatis a 
+                  cupiditate nostrum quaerat architecto!</p>
+        </div>
+        <div class="workCustomers">
+            <img src="../Assets/Customers/c1.png" />
+            <div class="customerText"> 
+                <h3>Customer1</h3>
+                <h4>Trade</h4>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>    
+            </div>        
+            </div>
+        <div class="workCustomers">
+            <img src="../Assets/Customers/c2.png" />
+            <div class="customerText"> 
+                <h3>Customer1</h5>
+                <h4>Trade</h6>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>    
+            </div>
+        </div>
+        <div class="workCustomers">
+            <img src="../Assets/Customers/c3.png" />
+            <div class="customerText"> 
+                <h3>Customer1</h3>
+                <h4>Trade</h4>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>
+                <p>Blaablaa</p>    
+            </div>
+        </div>
+      </div>
+      <div class="addNew">
+        <a href="#">+</a>
+      </div>
+    </div>
+    <!-- Our Work End -->
+
+    <!-- Contact Us Start -->
+    <div class="contact">
+        <div>
+            <h2 class="contactHeading">Contact Us</h2>
+            <p><b>Address</b></p>
+            <p>Swing by for a cup of coffee , or whatever .</p>
+            <p><i class="fa-solid fa-location-dot fa-sm" style="color: #1ba194;"></i>Amman,Jordan</p>
+            <p><i class="fa-solid fa-phone fa-sm" style="color: #1ba194;"></i>+962 79 0000000</p>
+            <p><i class="fa-regular fa-envelope fa-sm" style="color: #1ba194;"></i>test@test.com</p>
+        </div>
+        <div class="contactForm">
+                <label for="name">Name</label><br>
+                <input type="text" id="name"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email"><br>
+                <label for="message">Message</label><br>
+                <input type="text" id="message"><br>
+                <div class="inputButton">
+                    <div>
+                        <input type="checkbox" id="likeit">
+                        <label for="likeit"> I Like it!</label>
+                    </div>
+                    <button>Send</button>
+                </div>
+        </div>
+    </div>
+    <!-- Contact Us End -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="navigate">
+            <div class="slideUp">
+                <i class="fa-solid fa-chevron-up fa-xsm" style="color: #000000;font-weight: bold ;font-size: x-large;"></i>
+            </div>
+          </div>
+        <h4>Follow us</h4>
+        <div class="socialLinks">
+            <div class="socialItem"><i class="fa-brands fa-facebook-f fa-sm" style="color: #ffffff;cursor: pointer;"></i></div>
+            <div class="socialItem"><i class="fa-brands fa-twitter fa-sm" style="color: #ffffff;cursor: pointer;"></i></div>
+            <div class="socialItem"><i class="fa-brands fa-google-plus-g fa-sm" style="color: #ffffff;cursor: pointer;"></i></div>
+            <div class="socialItem"><i class="fa-brands fa-instagram fa-sm" style="color: #ffffff;cursor: pointer;"></i></div>
+            <div class="socialItem"><i class="fa-brands fa-linkedin-in fa-sm" style="color: #ffffff;cursor: pointer;"></i></div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <script src="https://kit.fontawesome.com/84b36ed3b6.js" crossorigin="anonymous"></script>
+    <script src="../Script/talentera.js"></script>
+  </body>
+</html>

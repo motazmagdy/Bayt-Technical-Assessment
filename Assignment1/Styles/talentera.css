@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Header start */
+
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headerContent{
+    display: flex;
+}
+.headerItems > a{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.headerItems > a:hover{
+    background-color:#009688 ;
+}
+.logoPart{
+    background-color:#009688;
+    padding: 0.5rem;
+    display: inline-block;
+}
+.logoPart > a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.homeIcon{
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    margin: 0.1rem 0.1rem !important;
+    
+}
+.logo{
+    margin: 0.5rem 0.7rem;
+}
+#dropdown{
+    background-color: black;
+    color: white;
+    border: unset;
+    font-size: medium;
+}
+.search{
+    padding: 0.5rem;
+}
+.searchIcon{
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    margin: 0.1rem 0.1rem !important;
+}
+.toggle {
+    display: none;
+}
+@media (max-width:479.99px ) {
+    .headerItems {
+        display: none;
+    } 
+    .search{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .navbarItemsShow{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navbarItemsShow > a{
+        display: inline-block;
+        padding: 0.1rem;
+        text-decoration: none;
+        color: white;
+        width: 50%;
+    }
+    .navbarItemsShow > a:hover{
+        background-color:#009688 ;
+    }
+    .teamInfo{
+        flex-direction: column;
+    }
+    .workContainer{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+    }
+}
+@media (min-width:480px) and (max-width:769.99px){
+    .headerItems {
+        display: none;
+    } 
+    .search{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .navbarItemsShow{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navbarItemsShow > a{
+        display: inline-block;
+        padding: 0.1rem;
+        text-decoration: none;
+        color: white;
+        width: 50%;
+    }
+    .navbarItemsShow > a:hover{
+        background-color:#009688 ;
+    }
+    .teamInfo{
+        flex-direction: column;
+    }
+    .profileImg{
+        border-radius: 11rem;
+    }
+    .workContainer{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+    }
+}
+@media (min-width:770px) and (max-width:1024.99px){
+    .profileImg{
+        border-radius:7rem;
+    }
+    .contactForm{
+        width:70%
+    }
+}
+@media (min-width:1025px){
+    .profileImg{
+        border-radius:7rem;
+    }
+    .contactForm{
+        width:70%
+    }
+}
+
+/* I didn't mention more medias as the page still constant  */
+
+/* Header end */
+
+/* Carousel start */
+
+.carousel{
+    position: relative;
+}
+.carouselI{
+    max-height: 25rem;
+    width:100%
+}
+.carouselP{
+    position: absolute;
+    bottom: -2%;
+    padding: 0.5rem;
+    left: 1%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+/* Carousel end */
+
+/* Our team start  */
+
+.team{
+    margin : 4rem 0;
+    text-align: center;
+}
+.teamInfo{
+    display: flex;
+    justify-content: space-around;
+
+}
+.profileImg{
+    width: 45%;
+    /* border-radius: 7rem; */
+}
+.profileTexts{
+    font-size: smaller;
+}
+
+/* Our team end  */
+
+/* Our work start */
+
+.work{
+    background-color:#333333 ;
+    color: white;
+    padding: 0.5rem;
+    position: relative;
+    
+}
+.workContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.workInfo{
+    width: 70%;
+}
+.workCustomers{
+    background-color: white;
+    color: black;
+    margin: 0 0.3rem;
+   
+}
+.workCustomers > img{
+    width:100%
+}
+.customerText{
+    padding: 0 1rem;
+}
+.addNew{
+    background-color: #1BA194;
+    position: absolute;
+    border-radius: 5rem;
+    padding: 0.4rem;
+    width: 3rem;
+    text-align: center;
+    font-size: xx-large;
+    right: 1rem;
+    bottom: -1.5rem;
+}
+.addNew > a {
+    text-decoration: none;
+    color:white ;
+}
+
+/* Our work end  */
+
+/* Contact Us Start  */
+
+.contact{
+    background-color: #F0F0F0;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contactHeading{
+    text-decoration-line: underline;
+    text-decoration-color:  #1BA194;
+    text-decoration-thickness: 5px;
+}
+.contactForm{
+    background-color: white;
+    box-shadow:0px 0px 5px #CCCCCC;
+    /* width:70%; */
+    padding:2rem;
+}
+.contactForm > input[type=text]{
+    outline: 0;
+    border-width:0 0 1px ;
+    border-color:#CCCCCC ;
+    width:98%;
+    margin : 1rem auto
+}
+.contactForm > input:focus{
+    border-width:0 0 1px ;
+    border-color:#0080ff ;
+}
+
+.inputButton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+}
+.inputButton >button{
+    margin-right: 1rem;
+    background-color: black;
+    color: white;
+    border: unset;
+    padding: 0.7rem;
+    font-size: larger;
+    cursor: pointer;
+}
+
+/* Contact Us End  */
+
+/* Footer start  */
+.footer{
+    background-color: black;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding:2rem
+}
+.navigate{
+    position: absolute;
+    background-color: black;
+    top: -1rem;
+    right: 1rem;
+    padding: 0.7rem;
+}
+.slideUp{
+    background-color: rgb(255, 255, 255);
+    padding: 0.1rem;
+    border-radius: 1rem;
+    height: 1.7rem;
+    cursor: pointer;
+}
+.socialLinks{
+    display: flex;
+    justify-content: center;
+}
+.socialItem{
+    background-color: #009688;
+    margin: 0 0.2rem;
+    padding: 0.7rem;
+}
+/* Footer End  */
+/* .addNew{
+    background-color: #1BA194;
+    position: absolute;
+    border-radius: 5rem;
+    padding: 0.4rem;
+    width: 3rem;
+    text-align: center;
+    font-size: xx-large;
+    right: 1rem;
+    bottom: -1.5rem;
+}
+.addNew > a {
+    text-decoration: none;
+    color:white ;
+} */
