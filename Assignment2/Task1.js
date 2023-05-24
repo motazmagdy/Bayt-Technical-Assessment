@@ -1,3 +1,7 @@
+// 1. Write a function called all which accepts an array and a callback and returns
+//  true if every value in the array returns true when passed as a parameter to the 
+//  callback function.
+
 var arr1=[2,5,6,7,8,9]
 var arr2=[21,1,2,9]
 var arr3=[2,1,24,8,2,9]

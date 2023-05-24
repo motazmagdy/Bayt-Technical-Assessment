@@ -1,3 +1,6 @@
+// 2. Write a function called contains that searches for a value in a nested object.
+//  It returns true if the object contains that value.
+
 var nestedObject = {
   data: {
     info: {
@@ -25,7 +28,6 @@ function contains(obj, value) {
       obj = objEntries[0][1];
     } else if (objEntries.length > 1) {
       for (var i = 0; i <= objEntries.length+1; i++) {
-
         if (i === objEntries.length) {
           return false
         } else if (typeof objEntries[i][1] == "object") {
